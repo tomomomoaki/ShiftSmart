@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--グループ検索-->
+        <scene sceneID="4zI-7W-692">
+            <objects>
+                <viewController storyboardIdentifier="AddGroupViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lPO-Nc-KhB" customClass="AddGroupViewController" customModule="ShiftSmart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="js3-IQ-rB4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="グループIDを入力して下さい" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9k3-gT-Hg5">
+                                <rect key="frame" x="75.5" y="163" width="263.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="グループID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DaL-GV-C8I">
+                                <rect key="frame" x="20" y="257" width="320" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="9XE-hn-Z8n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cre-WK-JsM">
+                                <rect key="frame" x="351" y="257" width="43" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="Q3U-U5-Kr0"/>
+                                    <constraint firstAttribute="height" constant="38" id="aUu-y8-gt5"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="虫眼鏡アイコン"/>
+                                <connections>
+                                    <action selector="tappedSearchGroupButton:" destination="lPO-Nc-KhB" eventType="touchUpInside" id="ADc-8d-fIa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="グループ名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAQ-I7-MK4">
+                                <rect key="frame" x="146" y="371" width="122" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0V4-Xh-iEl">
+                                <rect key="frame" x="162" y="480" width="90" height="35"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Ngi-zg-kAD"/>
+                                    <constraint firstAttribute="width" constant="90" id="Zau-eN-6Fr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="参加">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedAddGroupButton:" destination="lPO-Nc-KhB" eventType="touchUpInside" id="E1x-Nq-yk5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hih-WB-9Cx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9k3-gT-Hg5" firstAttribute="centerX" secondItem="js3-IQ-rB4" secondAttribute="centerX" id="B7W-Fv-yjs"/>
+                            <constraint firstItem="0V4-Xh-iEl" firstAttribute="top" secondItem="kAQ-I7-MK4" secondAttribute="bottom" constant="80" id="D7E-aj-Wc8"/>
+                            <constraint firstItem="cre-WK-JsM" firstAttribute="top" secondItem="9k3-gT-Hg5" secondAttribute="bottom" constant="70" id="Owp-Kd-mBB"/>
+                            <constraint firstItem="0V4-Xh-iEl" firstAttribute="centerX" secondItem="js3-IQ-rB4" secondAttribute="centerX" id="Xsr-AH-AN7"/>
+                            <constraint firstItem="DaL-GV-C8I" firstAttribute="top" secondItem="9k3-gT-Hg5" secondAttribute="bottom" constant="70" id="Z4i-zT-ZMj"/>
+                            <constraint firstItem="9k3-gT-Hg5" firstAttribute="top" secondItem="hih-WB-9Cx" secondAttribute="top" constant="75" id="btK-q0-jWv"/>
+                            <constraint firstItem="DaL-GV-C8I" firstAttribute="leading" secondItem="hih-WB-9Cx" secondAttribute="leading" constant="20" id="cig-xK-1Re"/>
+                            <constraint firstItem="kAQ-I7-MK4" firstAttribute="centerX" secondItem="js3-IQ-rB4" secondAttribute="centerX" id="nxl-hA-SQO"/>
+                            <constraint firstItem="hih-WB-9Cx" firstAttribute="trailing" secondItem="cre-WK-JsM" secondAttribute="trailing" constant="20" id="y1a-fg-aiC"/>
+                            <constraint firstItem="kAQ-I7-MK4" firstAttribute="top" secondItem="DaL-GV-C8I" secondAttribute="bottom" constant="80" id="yWS-TI-UUk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="グループ検索" id="Eg5-qO-kex"/>
+                    <connections>
+                        <outlet property="addGroupButton" destination="0V4-Xh-iEl" id="jfY-VL-ha5"/>
+                        <outlet property="groupIdTextField" destination="DaL-GV-C8I" id="Yry-Sx-whn"/>
+                        <outlet property="resultGroupNameLabel" destination="kAQ-I7-MK4" id="5nu-Ja-50Q"/>
+                        <outlet property="searchGroupButton" destination="cre-WK-JsM" id="ezd-Fe-l8b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6i6-zV-zAT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="726.08695652173924" y="-31.473214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cGj-iU-gp9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9oL-Ec-LsP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AMb-hY-ZG0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lPO-Nc-KhB" kind="relationship" relationship="rootViewController" id="UIM-Si-3xi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qua-QC-liO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184.05797101449278" y="-31.473214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="虫眼鏡アイコン" width="150" height="150"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

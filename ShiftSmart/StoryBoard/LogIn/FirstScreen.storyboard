@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First Screen View Controller-->
+        <scene sceneID="jeb-2T-2fT">
+            <objects>
+                <viewController storyboardIdentifier="FirstScreenViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7pE-Lb-gDM" customClass="FirstScreenViewController" customModule="ShiftSmart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bn-rE-aL9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="アプリの説明" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5K3-t6-q78">
+                                <rect key="frame" x="87" y="219" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="5QC-yD-9jp"/>
+                                    <constraint firstAttribute="height" constant="128" id="ab1-yi-qnn"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ShiftSmart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8b0-sN-dAB">
+                                <rect key="frame" x="143.5" y="143" width="127" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pL6-NM-j5M">
+                                <rect key="frame" x="107" y="447" width="200" height="60"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5vC-4I-wfL"/>
+                                    <constraint firstAttribute="height" constant="60" id="TR8-az-zfl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="新規管理者登録">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedManagerSignUpButton:" destination="7pE-Lb-gDM" eventType="touchUpInside" id="btq-vk-ciK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xb-G3-Z1O">
+                                <rect key="frame" x="107" y="657" width="200" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="4ba-Uf-aJb"/>
+                                    <constraint firstAttribute="height" constant="60" id="JM6-lI-uV5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="新規ゲスト登録">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedGuestSignUpButton:" destination="7pE-Lb-gDM" eventType="touchUpInside" id="xhQ-IV-Kgw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRd-fh-ooR">
+                                <rect key="frame" x="76.5" y="557" width="261" height="30"/>
+                                <state key="normal" title="すでに管理者アカウントをお持ちの方"/>
+                                <connections>
+                                    <action selector="tappedAlreadyHaveManagerAccountButton:" destination="7pE-Lb-gDM" eventType="touchUpInside" id="fH3-fO-xSI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oq3-wt-jzk">
+                                <rect key="frame" x="76.5" y="767" width="261" height="30"/>
+                                <state key="normal" title="すでにゲストアカウントをお持ちの方"/>
+                                <connections>
+                                    <action selector="tappedAlreadyHaveGuestAccountButton:" destination="7pE-Lb-gDM" eventType="touchUpInside" id="pBh-Bv-HZH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QiG-qc-IS2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8b0-sN-dAB" firstAttribute="centerX" secondItem="8bn-rE-aL9" secondAttribute="centerX" id="0is-9a-Un7"/>
+                            <constraint firstItem="oq3-wt-jzk" firstAttribute="centerX" secondItem="8bn-rE-aL9" secondAttribute="centerX" id="1EX-Tg-mBC"/>
+                            <constraint firstItem="pL6-NM-j5M" firstAttribute="top" secondItem="5K3-t6-q78" secondAttribute="bottom" constant="100" id="3n7-yS-SpV"/>
+                            <constraint firstItem="3Xb-G3-Z1O" firstAttribute="centerX" secondItem="8bn-rE-aL9" secondAttribute="centerX" id="5E4-mB-2KE"/>
+                            <constraint firstItem="fRd-fh-ooR" firstAttribute="centerX" secondItem="8bn-rE-aL9" secondAttribute="centerX" id="IKv-iC-UEQ"/>
+                            <constraint firstItem="8b0-sN-dAB" firstAttribute="top" secondItem="QiG-qc-IS2" secondAttribute="top" constant="55" id="Os1-He-ZX5"/>
+                            <constraint firstItem="5K3-t6-q78" firstAttribute="centerX" secondItem="8bn-rE-aL9" secondAttribute="centerX" id="THW-9d-fkk"/>
+                            <constraint firstItem="3Xb-G3-Z1O" firstAttribute="top" secondItem="fRd-fh-ooR" secondAttribute="bottom" constant="70" id="iZX-rN-73V"/>
+                            <constraint firstItem="fRd-fh-ooR" firstAttribute="top" secondItem="pL6-NM-j5M" secondAttribute="bottom" constant="50" id="u2i-hb-pO4"/>
+                            <constraint firstItem="pL6-NM-j5M" firstAttribute="centerX" secondItem="8bn-rE-aL9" secondAttribute="centerX" id="uhT-li-3mz"/>
+                            <constraint firstItem="oq3-wt-jzk" firstAttribute="top" secondItem="3Xb-G3-Z1O" secondAttribute="bottom" constant="50" id="vgb-hL-aXa"/>
+                            <constraint firstItem="5K3-t6-q78" firstAttribute="top" secondItem="8b0-sN-dAB" secondAttribute="bottom" constant="46" id="xsn-8Z-C9z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EKU-N3-DBS"/>
+                    <connections>
+                        <outlet property="alreadyHaveGuestAccountButton" destination="oq3-wt-jzk" id="cPg-D5-fiI"/>
+                        <outlet property="alreadyHaveManegerAccountButton" destination="fRd-fh-ooR" id="8Zm-hY-1Ee"/>
+                        <outlet property="guestSignUpButton" destination="3Xb-G3-Z1O" id="Gc9-RD-USe"/>
+                        <outlet property="managerSignUpButton" destination="pL6-NM-j5M" id="As8-Sf-REV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Byy-SE-rzg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039.1304347826087" y="118.52678571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7eF-Hl-Jqs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cwi-9A-iwi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oHi-GR-zNj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7pE-Lb-gDM" kind="relationship" relationship="rootViewController" id="3UF-2g-Ypo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j4c-2t-XbI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

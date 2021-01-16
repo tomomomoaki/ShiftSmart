@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b3S-Yz-tYc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--グループ-->
+        <scene sceneID="dvq-lt-d6R">
+            <objects>
+                <viewController storyboardIdentifier="GroupListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="h1a-XN-ngw" customClass="GroupListViewController" customModule="ShiftSmart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cUr-ec-3xk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P8T-LT-5oW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="yl3-RK-p5y" customClass="GroupListTableViewCell" customModule="ShiftSmart" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yl3-RK-p5y" id="E71-E1-WZN">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="グループ名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55s-Wl-Zhw">
+                                                    <rect key="frame" x="35" y="27.5" width="107" height="25.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="55s-Wl-Zhw" firstAttribute="centerY" secondItem="E71-E1-WZN" secondAttribute="centerY" id="3MQ-Ba-xvQ"/>
+                                                <constraint firstItem="55s-Wl-Zhw" firstAttribute="leading" secondItem="E71-E1-WZN" secondAttribute="leadingMargin" constant="15" id="aD2-Li-75C"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="groupNameLabel" destination="3MQ-Ba-xvQ" id="jpU-LQ-acC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tS3-v7-Plg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tS3-v7-Plg" firstAttribute="trailing" secondItem="P8T-LT-5oW" secondAttribute="trailing" id="J65-cF-YDK"/>
+                            <constraint firstItem="P8T-LT-5oW" firstAttribute="top" secondItem="tS3-v7-Plg" secondAttribute="top" id="tL3-Zt-T9N"/>
+                            <constraint firstItem="P8T-LT-5oW" firstAttribute="leading" secondItem="tS3-v7-Plg" secondAttribute="leading" id="xbP-bw-qmC"/>
+                            <constraint firstItem="tS3-v7-Plg" firstAttribute="bottom" secondItem="P8T-LT-5oW" secondAttribute="bottom" id="zXK-6f-0sC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="グループ" id="DnA-bc-ULQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="QU5-zR-CcP">
+                            <connections>
+                                <action selector="tappedAddGroupBarButton:" destination="h1a-XN-ngw" id="vIt-Yy-dwz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addGroupBarButton" destination="QU5-zR-CcP" id="dbh-Ry-JZP"/>
+                        <outlet property="groupListTableView" destination="P8T-LT-5oW" id="Saz-dm-tZz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tnX-0a-brH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1053.6231884057972" y="1.3392857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gcU-uc-A0J">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b3S-Yz-tYc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="34S-Ux-Tvl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="h1a-XN-ngw" kind="relationship" relationship="rootViewController" id="CXR-vy-1gf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dea-UC-ZpQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143.47826086956522" y="1.3392857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
