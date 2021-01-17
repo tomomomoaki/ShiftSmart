@@ -118,7 +118,8 @@ class ManagerSignUpViewController: UIViewController {
         let docData = [
             "groupName": groupName,
             "groupId": groupId,
-            "members": members
+            "members": members,
+            "createdAt": Timestamp()
         ] as [String : Any]
         
         Firestore.firestore().collection("Groups").document().setData(docData) {(err) in

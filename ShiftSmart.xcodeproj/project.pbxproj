@@ -16,6 +16,7 @@
 		B04323A625B029B00073FC4C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04323A525B029B00073FC4C /* User.swift */; };
 		B045691325A3166D00123F05 /* editDateInfomation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B045691225A3166D00123F05 /* editDateInfomation.storyboard */; };
 		B045691625A35F9400123F05 /* editDateInfomationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B045691525A35F9400123F05 /* editDateInfomationViewController.swift */; };
+		B050987E25B30F1A006F0F98 /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050987D25B30F1A006F0F98 /* Groups.swift */; };
 		B06F2367259DE13F00E32C03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06F2366259DE13F00E32C03 /* AppDelegate.swift */; };
 		B06F2369259DE13F00E32C03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06F2368259DE13F00E32C03 /* SceneDelegate.swift */; };
 		B06F2370259DE14200E32C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B06F236F259DE14200E32C03 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		B04323A525B029B00073FC4C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B045691225A3166D00123F05 /* editDateInfomation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = editDateInfomation.storyboard; sourceTree = "<group>"; };
 		B045691525A35F9400123F05 /* editDateInfomationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editDateInfomationViewController.swift; sourceTree = "<group>"; };
+		B050987D25B30F1A006F0F98 /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
 		B06F2363259DE13F00E32C03 /* ShiftSmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiftSmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06F2366259DE13F00E32C03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B06F2368259DE13F00E32C03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,7 +136,7 @@
 				B06F2366259DE13F00E32C03 /* AppDelegate.swift */,
 				B06F2368259DE13F00E32C03 /* SceneDelegate.swift */,
 				B06F237F259DE1DD00E32C03 /* ViewController */,
-				B06F237B259DE15B00E32C03 /* Model */,
+				B06F237B259DE15B00E32C03 /* Models */,
 				B06F237C259DE16D00E32C03 /* StoryBoard */,
 				B06F236F259DE14200E32C03 /* Assets.xcassets */,
 				B07C9A34259E2E44007E3814 /* GoogleService-Info.plist */,
@@ -144,13 +146,14 @@
 			path = ShiftSmart;
 			sourceTree = "<group>";
 		};
-		B06F237B259DE15B00E32C03 /* Model */ = {
+		B06F237B259DE15B00E32C03 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				B07C9A8025A30E5C007E3814 /* Event.swift */,
 				B04323A525B029B00073FC4C /* User.swift */,
+				B050987D25B30F1A006F0F98 /* Groups.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		B06F237C259DE16D00E32C03 /* StoryBoard */ = {
@@ -362,6 +365,7 @@
 				B07C9A6E25A2DA28007E3814 /* GroupListViewController.swift in Sources */,
 				B07C9A32259E2C35007E3814 /* FirstScreenViewController.swift in Sources */,
 				B043239B25AF3AEC0073FC4C /* ManagerLogInViewController.swift in Sources */,
+				B050987E25B30F1A006F0F98 /* Groups.swift in Sources */,
 				B016D94125B17FA1004B4FBE /* AddGroupViewController.swift in Sources */,
 				B06F2382259DE2BF00E32C03 /* UIColor-Extensions.swift in Sources */,
 				B04323A625B029B00073FC4C /* User.swift in Sources */,

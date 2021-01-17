@@ -41,7 +41,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="groupNameLabel" destination="3MQ-Ba-xvQ" id="jpU-LQ-acC"/>
+                                            <outlet property="groupNameLabel" destination="55s-Wl-Zhw" id="fkF-xM-4G2"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

@@ -48,13 +48,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0V4-Xh-iEl">
-                                <rect key="frame" x="162" y="480" width="90" height="35"/>
+                                <rect key="frame" x="147" y="480" width="120" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="Ngi-zg-kAD"/>
-                                    <constraint firstAttribute="width" constant="90" id="Zau-eN-6Fr"/>
+                                    <constraint firstAttribute="height" constant="50" id="Ngi-zg-kAD"/>
+                                    <constraint firstAttribute="width" constant="120" id="Zau-eN-6Fr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="参加">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
