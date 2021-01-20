@@ -11,7 +11,6 @@ import Firebase
 class Group {
     
     let groupName: String
-    let groupId: String
     let members: [String]
     let createdAt: Timestamp
     
@@ -19,7 +18,6 @@ class Group {
     
     init(dic: [String: Any]) {
         self.groupName = dic["groupName"] as? String ?? ""
-        self.groupId = dic["groupId"] as? String ?? ""
         self.members = dic["members"] as? [String] ?? [String]()
         self.createdAt = dic["createdAt"] as? Timestamp ?? Timestamp()
     }

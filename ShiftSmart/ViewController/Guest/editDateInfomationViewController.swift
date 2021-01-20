@@ -12,6 +12,8 @@ import FirebaseFirestore
 class editDateInfomationViewController: UIViewController, UITextFieldDelegate {
     
     var date: String?
+    var group: Group?
+    
     private var events = [Event]()
     
     @IBOutlet weak var dateLabel: UILabel!
@@ -45,6 +47,7 @@ class editDateInfomationViewController: UIViewController, UITextFieldDelegate {
     
     private func addEventToFirestore() {
         guard let memberName = memberNameTextField.text else { return }
+        guard let groupId = self.group?.documentId else { return }
         let date = dateLabel.text ?? ""
         
         let docData = [
@@ -54,7 +57,7 @@ class editDateInfomationViewController: UIViewController, UITextFieldDelegate {
             "createdAt": Timestamp()
         ] as [String: Any]
         
-        Firestore.firestore().collection("Events").document(date).collection("shifts").document().setData(docData) { (err) in
+        Firestore.firestore().collection("Groups").document(groupId).collection("Events").document(date).collection("shifts").document().setData(docData) { (err) in
             if let err = err {
                 print("event情報の保存に失敗しました\(err)")
                 return

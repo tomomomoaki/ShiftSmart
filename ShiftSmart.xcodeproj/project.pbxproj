@@ -29,11 +29,15 @@
 		B07C9A2D259DEF6C007E3814 /* ManagerLogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07C9A2C259DEF6C007E3814 /* ManagerLogIn.storyboard */; };
 		B07C9A32259E2C35007E3814 /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07C9A31259E2C35007E3814 /* FirstScreenViewController.swift */; };
 		B07C9A35259E2E44007E3814 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B07C9A34259E2E44007E3814 /* GoogleService-Info.plist */; };
-		B07C9A46259EE1DC007E3814 /* ManagimentShift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07C9A45259EE1DC007E3814 /* ManagimentShift.storyboard */; };
-		B07C9A4B259EE5AB007E3814 /* ManagimentShiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07C9A4A259EE5AB007E3814 /* ManagimentShiftViewController.swift */; };
+		B07C9A46259EE1DC007E3814 /* GuestShift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07C9A45259EE1DC007E3814 /* GuestShift.storyboard */; };
+		B07C9A4B259EE5AB007E3814 /* GuestShiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07C9A4A259EE5AB007E3814 /* GuestShiftViewController.swift */; };
 		B07C9A5D25A2B875007E3814 /* GroupList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07C9A5C25A2B875007E3814 /* GroupList.storyboard */; };
 		B07C9A6E25A2DA28007E3814 /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07C9A6D25A2DA28007E3814 /* GroupListViewController.swift */; };
 		B07C9A8125A30E5C007E3814 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07C9A8025A30E5C007E3814 /* Event.swift */; };
+		B0B61AC025B6C391001B5E8F /* MemberList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B61ABF25B6C391001B5E8F /* MemberList.storyboard */; };
+		B0B61AC325B6C445001B5E8F /* MemberListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B61AC225B6C445001B5E8F /* MemberListViewController.swift */; };
+		B0B61AC825B6D221001B5E8F /* ManagimentShift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B61AC725B6D221001B5E8F /* ManagimentShift.storyboard */; };
+		B0B61ACB25B6D2C4001B5E8F /* ManagimentShiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B61ACA25B6D2C4001B5E8F /* ManagimentShiftViewController.swift */; };
 		D652E3024449EC5C35ED06DE /* Pods_ShiftSmart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3899C8824F13FBD3082FCE00 /* Pods_ShiftSmart.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,11 +68,15 @@
 		B07C9A2C259DEF6C007E3814 /* ManagerLogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManagerLogIn.storyboard; sourceTree = "<group>"; };
 		B07C9A31259E2C35007E3814 /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
 		B07C9A34259E2E44007E3814 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B07C9A45259EE1DC007E3814 /* ManagimentShift.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManagimentShift.storyboard; sourceTree = "<group>"; };
-		B07C9A4A259EE5AB007E3814 /* ManagimentShiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagimentShiftViewController.swift; sourceTree = "<group>"; };
+		B07C9A45259EE1DC007E3814 /* GuestShift.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GuestShift.storyboard; sourceTree = "<group>"; };
+		B07C9A4A259EE5AB007E3814 /* GuestShiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestShiftViewController.swift; sourceTree = "<group>"; };
 		B07C9A5C25A2B875007E3814 /* GroupList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GroupList.storyboard; sourceTree = "<group>"; };
 		B07C9A6D25A2DA28007E3814 /* GroupListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
 		B07C9A8025A30E5C007E3814 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		B0B61ABF25B6C391001B5E8F /* MemberList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MemberList.storyboard; sourceTree = "<group>"; };
+		B0B61AC225B6C445001B5E8F /* MemberListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListViewController.swift; sourceTree = "<group>"; };
+		B0B61AC725B6D221001B5E8F /* ManagimentShift.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManagimentShift.storyboard; sourceTree = "<group>"; };
+		B0B61ACA25B6D2C4001B5E8F /* ManagimentShiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagimentShiftViewController.swift; sourceTree = "<group>"; };
 		CB4218915120DB1FA335BE1C /* Pods-ShiftSmart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShiftSmart.release.xcconfig"; path = "Target Support Files/Pods-ShiftSmart/Pods-ShiftSmart.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +106,9 @@
 			children = (
 				B07C9A6D25A2DA28007E3814 /* GroupListViewController.swift */,
 				B016D94025B17FA1004B4FBE /* AddGroupViewController.swift */,
+				B07C9A4A259EE5AB007E3814 /* GuestShiftViewController.swift */,
+				B045691525A35F9400123F05 /* editDateInfomationViewController.swift */,
+				B0B61AC225B6C445001B5E8F /* MemberListViewController.swift */,
 			);
 			path = Guest;
 			sourceTree = "<group>";
@@ -107,6 +118,9 @@
 			children = (
 				B07C9A5C25A2B875007E3814 /* GroupList.storyboard */,
 				B016D94325B1801A004B4FBE /* AddGroup.storyboard */,
+				B07C9A45259EE1DC007E3814 /* GuestShift.storyboard */,
+				B045691225A3166D00123F05 /* editDateInfomation.storyboard */,
+				B0B61ABF25B6C391001B5E8F /* MemberList.storyboard */,
 			);
 			path = Guest;
 			sourceTree = "<group>";
@@ -211,8 +225,7 @@
 		B07C9A44259EE1A9007E3814 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				B07C9A45259EE1DC007E3814 /* ManagimentShift.storyboard */,
-				B045691225A3166D00123F05 /* editDateInfomation.storyboard */,
+				B0B61AC725B6D221001B5E8F /* ManagimentShift.storyboard */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -220,8 +233,7 @@
 		B07C9A48259EE58A007E3814 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				B07C9A4A259EE5AB007E3814 /* ManagimentShiftViewController.swift */,
-				B045691525A35F9400123F05 /* editDateInfomationViewController.swift */,
+				B0B61ACA25B6D2C4001B5E8F /* ManagimentShiftViewController.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -293,7 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B07C9A46259EE1DC007E3814 /* ManagimentShift.storyboard in Resources */,
+				B07C9A46259EE1DC007E3814 /* GuestShift.storyboard in Resources */,
 				B045691325A3166D00123F05 /* editDateInfomation.storyboard in Resources */,
 				B06F2373259DE14200E32C03 /* LaunchScreen.storyboard in Resources */,
 				B07C9A2D259DEF6C007E3814 /* ManagerLogIn.storyboard in Resources */,
@@ -301,8 +313,10 @@
 				B07C9A5D25A2B875007E3814 /* GroupList.storyboard in Resources */,
 				B06F2370259DE14200E32C03 /* Assets.xcassets in Resources */,
 				B06F2386259DE31900E32C03 /* FirstScreen.storyboard in Resources */,
+				B0B61AC825B6D221001B5E8F /* ManagimentShift.storyboard in Resources */,
 				B016D94425B1801A004B4FBE /* AddGroup.storyboard in Resources */,
 				B06F2390259DEB2B00E32C03 /* ManagerSignUp.storyboard in Resources */,
+				B0B61AC025B6C391001B5E8F /* MemberList.storyboard in Resources */,
 				B06F2389259DE88900E32C03 /* GuestSignUp.storyboard in Resources */,
 				B07C9A35259E2E44007E3814 /* GoogleService-Info.plist in Resources */,
 			);
@@ -359,8 +373,9 @@
 			files = (
 				B045691625A35F9400123F05 /* editDateInfomationViewController.swift in Sources */,
 				B043239825AF2F0C0073FC4C /* ManagerSignUpViewController.swift in Sources */,
-				B07C9A4B259EE5AB007E3814 /* ManagimentShiftViewController.swift in Sources */,
+				B07C9A4B259EE5AB007E3814 /* GuestShiftViewController.swift in Sources */,
 				B06F2367259DE13F00E32C03 /* AppDelegate.swift in Sources */,
+				B0B61ACB25B6D2C4001B5E8F /* ManagimentShiftViewController.swift in Sources */,
 				B043239E25AF3B2D0073FC4C /* GuestSignUpViewController.swift in Sources */,
 				B07C9A6E25A2DA28007E3814 /* GroupListViewController.swift in Sources */,
 				B07C9A32259E2C35007E3814 /* FirstScreenViewController.swift in Sources */,
@@ -369,6 +384,7 @@
 				B016D94125B17FA1004B4FBE /* AddGroupViewController.swift in Sources */,
 				B06F2382259DE2BF00E32C03 /* UIColor-Extensions.swift in Sources */,
 				B04323A625B029B00073FC4C /* User.swift in Sources */,
+				B0B61AC325B6C445001B5E8F /* MemberListViewController.swift in Sources */,
 				B04323A225AF3B420073FC4C /* GuestLogInViewController.swift in Sources */,
 				B07C9A8125A30E5C007E3814 /* Event.swift in Sources */,
 				B06F2369259DE13F00E32C03 /* SceneDelegate.swift in Sources */,

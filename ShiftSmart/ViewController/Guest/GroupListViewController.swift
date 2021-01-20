@@ -11,15 +11,12 @@ import Firebase
 class GroupListViewController: UIViewController {
     
     private var groups = [Group]()
-    private var user: User? {
-        didSet {
-            navigationItem.title = user?.userName
-        }
-    }
+    private var user: User?
     private var groupListner: ListenerRegistration?
     
     @IBOutlet weak var groupListTableView: UITableView!
     @IBOutlet weak var addGroupBarButton: UIBarButtonItem!
+    @IBOutlet weak var signOutButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +25,14 @@ class GroupListViewController: UIViewController {
         groupListTableView.dataSource = self
         
         confirmLoginUser()
-        fetchGroupsInfoFromFirestore()
+        
         
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         fetchLogInUserInfo()
+        fetchGroupsInfoFromFirestore()
     }
     
     func fetchGroupsInfoFromFirestore() {
@@ -96,6 +94,16 @@ class GroupListViewController: UIViewController {
         self.present(nav, animated: true, completion: nil)
     }
     
+    @IBAction func tappedSignOutButton(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            pushLoginViewController()
+        } catch {
+          print("ログアウトに失敗しました\(error)")
+            
+        }
+    }
+    
     
     private func confirmLoginUser() {
         if Auth.auth().currentUser?.uid == nil{
@@ -123,6 +131,14 @@ extension GroupListViewController: UITableViewDelegate, UITableViewDataSource {
         cell.group = groups[indexPath.row]
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard =  UIStoryboard.init(name: "GuestShift", bundle: nil)
+        let guestShiftViewController = storyboard.instantiateViewController(identifier: "GuestShiftViewController") as! GuestShiftViewController
+        guestShiftViewController.group = groups[indexPath.row]
+        navigationController?.pushViewController(guestShiftViewController, animated: true)
+    }
+    
 }
 
 class GroupListTableViewCell: UITableViewCell {

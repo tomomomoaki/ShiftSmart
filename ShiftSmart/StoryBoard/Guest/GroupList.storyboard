@@ -57,6 +57,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="グループ" id="DnA-bc-ULQ">
+                        <barButtonItem key="leftBarButtonItem" title="サインアウト" id="f4m-6q-gLs">
+                            <connections>
+                                <action selector="tappedSignOutButton:" destination="h1a-XN-ngw" id="88t-rL-yRb"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="QU5-zR-CcP">
                             <connections>
                                 <action selector="tappedAddGroupBarButton:" destination="h1a-XN-ngw" id="vIt-Yy-dwz"/>
@@ -66,6 +71,7 @@
                     <connections>
                         <outlet property="addGroupBarButton" destination="QU5-zR-CcP" id="dbh-Ry-JZP"/>
                         <outlet property="groupListTableView" destination="P8T-LT-5oW" id="Saz-dm-tZz"/>
+                        <outlet property="signOutButton" destination="f4m-6q-gLs" id="l7x-ME-l0T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tnX-0a-brH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

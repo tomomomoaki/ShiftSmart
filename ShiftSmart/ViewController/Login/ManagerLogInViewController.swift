@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ManagerLogInViewController: UIViewController {
 
@@ -19,5 +20,22 @@ class ManagerLogInViewController: UIViewController {
         managerLogInButton.layer.cornerRadius = 20
     }
 
+    @IBAction func tappedManagerLogInButton(_ sender: Any) {
+        guard let email = managerEmailTextField.text else { return }
+        guard let password = managerPasswordTextField.text else { return }
+        
+        Auth.auth().signIn(withEmail: email, password: password) { (res, err) in
+            if let err = err {
+                print("Managerログインに失敗しました\(err)")
+                return
+            }
+            print("ログインに成功しました")
+            let nav = self.presentingViewController as! UINavigationController
+            let groupListViewController = nav.viewControllers[nav.viewControllers.count-1] as? GroupListViewController
+            groupListViewController?.fetchGroupsInfoFromFirestore()
+            
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
     
 }

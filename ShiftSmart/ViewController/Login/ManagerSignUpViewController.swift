@@ -117,12 +117,11 @@ class ManagerSignUpViewController: UIViewController {
         
         let docData = [
             "groupName": groupName,
-            "groupId": groupId,
             "members": members,
             "createdAt": Timestamp()
         ] as [String : Any]
         
-        Firestore.firestore().collection("Groups").document().setData(docData) {(err) in
+        Firestore.firestore().collection("Groups").document(groupId).setData(docData) {(err) in
             if let err = err {
                 print("group情報の保存に失敗しました\(err)")
                 return
